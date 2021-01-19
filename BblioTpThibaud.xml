@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bibliothque>
+
+<!-- Un commentaire en XML-->
+<livres>
+  <livre idLivre="11">
+  <titre>Fondation</titre>
+    <dateParution>1951</dateParution>
+    <ISBN>123-456-789</ISBN>
+
+  </livre>
+  
+    <livre idLivre="12">
+  <titre>Fondation</titre>
+    <dateParution>1951</dateParution>
+    <ISBN>123-456-789</ISBN>
+
+  </livre>
+    <livre idLivre="13">
+  <titre>Pierre</titre>
+    <dateParution>1951</dateParution>
+    <ISBN>123-456-789</ISBN>
+
+  </livre>
+  
+  
+  
+</livres>
+
+<auteurs>
+<auteur  idAuteur="a1">
+<nom>Aismm</nom>
+<prenom>jks</prenom>
+
+</auteur>
+
+
+
+<auteur  idAuteur="a2">
+<nom>sm</nom>
+<prenom>ddd</prenom>
+
+</auteur>
+</auteurs>
+
+<abonnes>
+<abonne>
+<nom> Smith</nom>
+
+<prenom>JKAL</prenom>
+</abonne>
+
+<abonne>
+<nom> SZZZh</nom>
+
+<prenom>ZDDDL</prenom>
+<emprunts>
+<emprunt>
+<dateEmprunt>02/12/2020</dateEmprunt>
+<dateRetour>12/01/2021</dateRetour>
+<livreEmprunte idLivre="11"/>
+</emprunt>
+
+</emprunts>
+
+
+</abonne>
+</abonnes>
+
+
+</bibliothque>

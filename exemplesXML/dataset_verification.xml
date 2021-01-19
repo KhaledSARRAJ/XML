@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<dataset>
+  <category catid="BIRDS" name="Birds" descn="&lt;image src=&quot;../images/birds_icon.gif&quot;&gt;&lt;font size=&quot;5&quot; color=&quot;blue&quot;&gt; Birds&lt;/font&gt;"/>
+  <category catid="CATS" name="Cats" descn="&lt;image src=&quot;../images/cats_icon.gif&quot;&gt;&lt;font size=&quot;5&quot; color=&quot;blue&quot;&gt; Cats&lt;/font&gt;"/>
+  <category catid="DOGS" name="Dogs" descn="&lt;image src=&quot;../images/dogs_icon.gif&quot;&gt;&lt;font size=&quot;5&quot; color=&quot;blue&quot;&gt; Dogs&lt;/font&gt;"/>
+  <category catid="FISH" name="Fish" descn="&lt;image src=&quot;../images/fish_icon.gif&quot;&gt;&lt;font size=&quot;5&quot; color=&quot;blue&quot;&gt; Fish&lt;/font&gt;"/>
+  <category catid="REPTILES" name="Reptiles" descn="&lt;image src=&quot;../images/reptiles_icon.gif&quot;&gt;&lt;font size=&quot;5&quot; color=&quot;blue&quot;&gt; Reptiles&lt;/font&gt;"/>
+
+  <sequence name="linenum" nextid="1000"/>
+  <sequence name="ordernum" nextid="1001"/>
+
+  <account userid="j2ee" email="yourname@yourdomain.com" firstname="ABC" lastname="XYX" status="OK" addr1="901 San Antonio Road" addr2="MS UCUP02-206" city="Palo Alto" state="CA" zip="94303" country="USA" phone="555-555-5555"/>
+
+  <supplier suppid="1" name="XYZ Pets" status="AC" addr1="600 Avon Way" addr2="" city="Los Angeles" state="CA" zip="94024" phone="212-947-0797"/>
+  <supplier suppid="2" name="ABC Pets" status="AC" addr1="700 Abalone Way" addr2="" city="San Francisco " state="CA" zip="94024" phone="415-947-0797"/>
+
+  <bannerdata favcategory="DOGS" bannername="&lt;image src=&quot;../images/banner_dogs.gif&quot;&gt;"/>
+
+  <product productid="AV-CB-01" category="BIRDS" name="Amazon Parrot" descn="&lt;image src=&quot;../images/bird4.gif&quot;&gt;Great companion for up to 75 years"/>
+  <product productid="AV-SB-02" category="BIRDS" name="Finch" descn="&lt;image src=&quot;../images/bird1.gif&quot;&gt;Great stress reliever"/>
+  <product productid="FI-FW-01" category="FISH" name="Koi" descn="&lt;image src=&quot;../images/fish3.gif&quot;&gt;Fresh Water fish from Japan"/>
+  <product productid="FI-FW-02" category="FISH" name="Goldfish" descn="&lt;image src=&quot;../images/fish2.gif&quot;&gt;Fresh Water fish from China"/>
+  <product productid="FI-SW-01" category="FISH" name="Angelfish" descn="&lt;image src=&quot;../images/fish1.jpg&quot;&gt;Salt Water fish from Australia"/>
+  <product productid="FI-SW-02" category="FISH" name="Tiger Shark" descn="&lt;image src=&quot;../images/fish4.gif&quot;&gt;Salt Water fish from Australia"/>
+  <product productid="FL-DLH-02" category="CATS" name="Persian" descn="&lt;image src=&quot;../images/cat1.gif&quot;&gt;Friendly house cat, doubles as a princess"/>
+  <product productid="FL-DSH-01" category="CATS" name="Manx" descn="&lt;image src=&quot;../images/cat3.gif&quot;&gt;Great for reducing mouse populations"/>
+  <product productid="K9-BD-01" category="DOGS" name="Bulldog" descn="&lt;image src=&quot;../images/dog2.gif&quot;&gt;Friendly dog from England"/>
+  <product productid="K9-CW-01" category="DOGS" name="Chihuahua" descn="&lt;image src=&quot;../images/dog4.gif&quot;&gt;Great companion dog"/>
+  <product productid="K9-DL-01" category="DOGS" name="Dalmation" descn="&lt;image src=&quot;../images/dog5.gif&quot;&gt;Great dog for a Fire Station"/>
+  <product productid="K9-PO-02" category="DOGS" name="Poodle" descn="&lt;image src=&quot;../images/dog6.gif&quot;&gt;Cute dog from France"/>
+  <product productid="K9-RT-01" category="DOGS" name="Golden Retriever" descn="&lt;image src=&quot;../images/dog1.gif&quot;&gt;Great family dog"/>
+  <product productid="K9-RT-02" category="DOGS" name="Labrador Retriever" descn="&lt;image src=&quot;../images/dog5.gif&quot;&gt;Great hunting dog"/>
+  <product productid="RP-LI-02" category="REPTILES" name="Iguana" descn="&lt;image src=&quot;../images/lizard2.gif&quot;&gt;Friendly green friend"/>
+  <product productid="RP-SN-01" category="REPTILES" name="Rattlesnake" descn="&lt;image src=&quot;../images/lizard3.gif&quot;&gt;Doubles as a watch dog"/>
+
+  <orders orderid="1000" userid="j2ee" orderdate="${now().format(yyyy-MM-dd)}" shipaddr1="901 San Antonio Road" shipaddr2="MS UCUP02-206" shipcity="Palo Alto" shipstate="CA" shipzip="94303" shipcountry="USA" billaddr1="901 San Antonio Road" billaddr2="MS UCUP02-206" billcity="Palo Alto" billstate="CA" billzip="94303" billcountry="USA" courier="UPS" totalprice="18.50" billtofirstname="ABC" billtolastname="XYX" shiptofirstname="ABC" shiptolastname="XYX" creditcard="999 9999 9999 9999" exprdate="12/03" cardtype="Visa" locale="CA"/>
+
+  <signon username="j2ee" password="j2ee"/>
+
+  <profile userid="j2ee" langpref="english" favcategory="DOGS" mylistopt="true" banneropt="true"/>
+
+  <orderstatus orderid="1000" linenum="1000" timestamp="${now().format(yyyy-MM-dd)}" status="P"/>
+
+  <item itemid="EST-1" productid="FI-SW-01" listprice="16.50" unitcost="10.00" supplier="1" status="P" attr1="Large" attr2="[NULL]" attr3="[NULL]" attr4="[NULL]" attr5="[NULL]"/>
+  <item itemid="EST-10" productid="K9-DL-01" listprice="18.50" unitcost="12.00" supplier="1" status="P" attr1="Spotted Adult Female" attr2="[NULL]" attr3="[NULL]" attr4="[NULL]" attr5="[NULL]"/>
+  <item itemid="EST-11" productid="RP-SN-01" listprice="18.50" unitcost="12.00" supplier="1" status="P" attr1="Venomless" attr2="[NULL]" attr3="[NULL]" attr4="[NULL]" attr5="[NULL]"/>
+  <item itemid="EST-12" productid="RP-SN-01" listprice="18.50" unitcost="12.00" supplier="1" status="P" attr1="Rattleless" attr2="[NULL]" attr3="[NULL]" attr4="[NULL]" attr5="[NULL]"/>
+  <item itemid="EST-13" productid="RP-LI-02" listprice="18.50" unitcost="12.00" supplier="1" status="P" attr1="Green Adult" attr2="[NULL]" attr3="[NULL]" attr4="[NULL]" attr5="[NULL]"/>
+  <item itemid="EST-14" productid="FL-DSH-01" listprice="58.50" unitcost="12.00" supplier="1" status="P" attr1="Tailless" attr2="[NULL]" attr3="[NULL]" attr4="[NULL]" attr5="[NULL]"/>
+  <item itemid="EST-15" productid="FL-DSH-01" listprice="23.50" unitcost="12.00" supplier="1" status="P" attr1="With tail" attr2="[NULL]" attr3="[NULL]" attr4="[NULL]" attr5="[NULL]"/>
+  <item itemid="EST-16" productid="FL-DLH-02" listprice="93.50" unitcost="12.00" supplier="1" status="P" attr1="Adult Female" attr2="[NULL]" attr3="[NULL]" attr4="[NULL]" attr5="[NULL]"/>
+  <item itemid="EST-17" productid="FL-DLH-02" listprice="93.50" unitcost="12.00" supplier="1" status="P" attr1="Adult Male" attr2="[NULL]" attr3="[NULL]" attr4="[NULL]" attr5="[NULL]"/>
+  <item itemid="EST-18" productid="AV-CB-01" listprice="193.50" unitcost="92.00" supplier="1" status="P" attr1="Adult Male" attr2="[NULL]" attr3="[NULL]" attr4="[NULL]" attr5="[NULL]"/>
+  <item itemid="EST-19" productid="AV-SB-02" listprice="15.50" unitcost="2.00" supplier="1" status="P" attr1="Adult Male" attr2="[NULL]" attr3="[NULL]" attr4="[NULL]" attr5="[NULL]"/>
+  <item itemid="EST-2" productid="FI-SW-01" listprice="16.50" unitcost="10.00" supplier="1" status="P" attr1="Small" attr2="[NULL]" attr3="[NULL]" attr4="[NULL]" attr5="[NULL]"/>
+  <item itemid="EST-20" productid="FI-FW-02" listprice="5.50" unitcost="2.00" supplier="1" status="P" attr1="Adult Male" attr2="[NULL]" attr3="[NULL]" attr4="[NULL]" attr5="[NULL]"/>
+  <item itemid="EST-21" productid="FI-FW-02" listprice="5.29" unitcost="1.00" supplier="1" status="P" attr1="Adult Female" attr2="[NULL]" attr3="[NULL]" attr4="[NULL]" attr5="[NULL]"/>
+  <item itemid="EST-22" productid="K9-RT-02" listprice="135.50" unitcost="100.00" supplier="1" status="P" attr1="Adult Male" attr2="[NULL]" attr3="[NULL]" attr4="[NULL]" attr5="[NULL]"/>
+  <item itemid="EST-23" productid="K9-RT-02" listprice="145.49" unitcost="100.00" supplier="1" status="P" attr1="Adult Female" attr2="[NULL]" attr3="[NULL]" attr4="[NULL]" attr5="[NULL]"/>
+  <item itemid="EST-24" productid="K9-RT-02" listprice="255.50" unitcost="92.00" supplier="1" status="P" attr1="Adult Male" attr2="[NULL]" attr3="[NULL]" attr4="[NULL]" attr5="[NULL]"/>
+  <item itemid="EST-25" productid="K9-RT-02" listprice="325.29" unitcost="90.00" supplier="1" status="P" attr1="Adult Female" attr2="[NULL]" attr3="[NULL]" attr4="[NULL]" attr5="[NULL]"/>
+  <item itemid="EST-26" productid="K9-CW-01" listprice="125.50" unitcost="92.00" supplier="1" status="P" attr1="Adult Male" attr2="[NULL]" attr3="[NULL]" attr4="[NULL]" attr5="[NULL]"/>
+  <item itemid="EST-27" productid="K9-CW-01" listprice="155.29" unitcost="90.00" supplier="1" status="P" attr1="Adult Female" attr2="[NULL]" attr3="[NULL]" attr4="[NULL]" attr5="[NULL]"/>
+  <item itemid="EST-28" productid="K9-RT-01" listprice="155.29" unitcost="90.00" supplier="1" status="P" attr1="Adult Female" attr2="[NULL]" attr3="[NULL]" attr4="[NULL]" attr5="[NULL]"/>
+  <item itemid="EST-3" productid="FI-SW-02" listprice="18.50" unitcost="12.00" supplier="1" status="P" attr1="Toothless" attr2="[NULL]" attr3="[NULL]" attr4="[NULL]" attr5="[NULL]"/>
+  <item itemid="EST-4" productid="FI-FW-01" listprice="18.50" unitcost="12.00" supplier="1" status="P" attr1="Spotted" attr2="[NULL]" attr3="[NULL]" attr4="[NULL]" attr5="[NULL]"/>
+  <item itemid="EST-5" productid="FI-FW-01" listprice="18.50" unitcost="12.00" supplier="1" status="P" attr1="Spotless" attr2="[NULL]" attr3="[NULL]" attr4="[NULL]" attr5="[NULL]"/>
+  <item itemid="EST-6" productid="K9-BD-01" listprice="18.50" unitcost="12.00" supplier="1" status="P" attr1="Male Adult" attr2="[NULL]" attr3="[NULL]" attr4="[NULL]" attr5="[NULL]"/>
+  <item itemid="EST-7" productid="K9-BD-01" listprice="18.50" unitcost="12.00" supplier="1" status="P" attr1="Female Puppy" attr2="[NULL]" attr3="[NULL]" attr4="[NULL]" attr5="[NULL]"/>
+  <item itemid="EST-8" productid="K9-PO-02" listprice="18.50" unitcost="12.00" supplier="1" status="P" attr1="Male Puppy" attr2="[NULL]" attr3="[NULL]" attr4="[NULL]" attr5="[NULL]"/>
+  <item itemid="EST-9" productid="K9-DL-01" listprice="18.50" unitcost="12.00" supplier="1" status="P" attr1="Spotless Male Puppy" attr2="[NULL]" attr3="[NULL]" attr4="[NULL]" attr5="[NULL]"/>
+
+  <inventory itemid="EST-1" qty="10000"/>
+  <inventory itemid="EST-10" qty="10000"/>
+  <inventory itemid="EST-11" qty="10000"/>
+  <inventory itemid="EST-12" qty="10000"/>
+  <inventory itemid="EST-13" qty="10000"/>
+  <inventory itemid="EST-14" qty="10000"/>
+  <inventory itemid="EST-15" qty="10000"/>
+  <inventory itemid="EST-16" qty="10000"/>
+  <inventory itemid="EST-17" qty="10000"/>
+  <inventory itemid="EST-18" qty="10000"/>
+  <inventory itemid="EST-19" qty="10000"/>
+  <inventory itemid="EST-2" qty="10000"/>
+  <inventory itemid="EST-20" qty="10000"/>
+  <inventory itemid="EST-21" qty="10000"/>
+  <inventory itemid="EST-22" qty="10000"/>
+  <inventory itemid="EST-23" qty="10000"/>
+  <inventory itemid="EST-24" qty="10000"/>
+  <inventory itemid="EST-25" qty="10000"/>
+  <inventory itemid="EST-26" qty="10000"/>
+  <inventory itemid="EST-27" qty="10000"/>
+  <inventory itemid="EST-28" qty="10000"/>
+  <inventory itemid="EST-3" qty="10000"/>
+  <inventory itemid="EST-4" qty="9999"/>
+  <inventory itemid="EST-5" qty="10000"/>
+  <inventory itemid="EST-6" qty="10000"/>
+  <inventory itemid="EST-7" qty="10000"/>
+  <inventory itemid="EST-8" qty="10000"/>
+  <inventory itemid="EST-9" qty="10000"/>
+
+  <lineitem orderid="1000" linenum="1" itemid="EST-4" quantity="1" unitprice="18.50"/>
+
+  
+</dataset>

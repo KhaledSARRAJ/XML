@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- édité avec XMLSpy v2021 (x64) (http://www.altova.com) par Robert Smith (Robert Corporation) -->
+<!-- edited with XMLSpy v2008 rel. 2 sp2 (http://www.altova.com) by SHOCK (SHOCK) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="HBO">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="series"/>
+				<xs:element ref="employes"/>
+				<xs:element ref="contrats"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="series">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="serie" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="serie">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="titre"/>
+				<xs:element ref="synopsis"/>
+				<xs:element ref="dateDiffusion"/>
+				<xs:element ref="nbSaison"/>
+				<xs:element ref="personnages"/>
+			</xs:sequence>
+			<xs:attribute name="codeSerie" type="xs:ID" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="titre" type="xs:string"/>
+	<xs:element name="photo" type="xs:string"/>
+	<xs:element name="synopsis" type="xs:string"/>
+	<xs:element name="dateDiffusion" type="xs:date"/>
+	<xs:element name="nbSaison" type="xs:int"/>
+	<xs:element name="personnages">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="personnage" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="personnage">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="identite"/>
+				<xs:element ref="descriptif"/>
+			</xs:sequence>
+			<xs:attribute name="idPerso" type="xs:ID" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="descriptif" type="xs:string"/>
+	<xs:element name="role" type="xs:string"/>
+	<xs:element name="employes">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="acteurs"/>
+				<xs:element ref="producteurs"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="acteurs">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="acteur" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="acteur">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="nom"/>
+				<xs:element name="prenom"/>
+				<xs:element name="dateNaissance"/>
+			</xs:sequence>
+			<xs:attribute name="idActeur" type="xs:ID" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="nom" type="xs:string"/>
+	<xs:element name="prenom" type="xs:string"/>
+	<xs:element name="dateNaissance" type="xs:date"/>
+	<xs:element name="adresse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="num"/>
+				<xs:element ref="voie"/>
+				<xs:element ref="ville"/>
+				<xs:element ref="codePostal"/>
+				<xs:element ref="pays"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="num" type="xs:int"/>
+	<xs:element name="voie" type="xs:string"/>
+	<xs:element name="ville" type="xs:string"/>
+	<xs:element name="codePostal" type="xs:string"/>
+	<xs:element name="pays" type="xs:string"/>
+	<xs:element name="producteurs">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="producteur" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="producteur">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="nom"/>
+				<xs:element name="prenom"/>
+			</xs:sequence>
+			<xs:attribute name="idProducteur" type="xs:ID" use="required"/>
+			<xs:attribute name="codeSerie" type="xs:IDREF" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="contrats">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="contrat" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="contrat">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="role"/>
+				<xs:element ref="cachet"/>
+				<xs:element ref="dateSignature"/>
+			</xs:sequence>
+			<xs:attribute name="numero" type="xs:ID" use="required"/>
+			<xs:attribute name="idProducteur" type="xs:IDREF" use="required"/>
+			<xs:attribute name="idActeur" type="xs:IDREF" use="required"/>
+			<xs:attribute name="codeSerie" type="xs:IDREF" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="dateSignature" type="xs:date"/>
+	<xs:element name="cachet" type="xs:int"/>
+</xs:schema>

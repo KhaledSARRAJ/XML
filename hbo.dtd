@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT HBO (series, employes, contrats)>
+	<!ELEMENT series (serie*)>
+		<!ELEMENT serie (titre,synopsis, dateDiffusion, nbSaison, personnages)>
+		<!ATTLIST serie	codeSerie ID #REQUIRED>
+		<!ELEMENT titre (#PCDATA)>
+		<!ELEMENT synopsis (#PCDATA)>
+		<!ELEMENT dateDiffusion (#PCDATA)>
+		<!ELEMENT nbSaison (#PCDATA)>
+		<!ELEMENT personnages (personnage*)>
+			<!ELEMENT personnage (identite, descriptif)>
+				<!ATTLIST personnage idPerso ID #REQUIRED>
+				<!ELEMENT identite (#PCDATA)>
+					<!ATTLIST role idPerso IDREF #IMPLIED>
+				<!ELEMENT descriptif (#PCDATA)>
+	<!ELEMENT employes (acteurs, producteurs)>
+		<!ELEMENT acteurs (acteur*)>
+			<!ELEMENT acteur (nom, prenom, dateNaissance)>
+				<!ATTLIST acteur idActeur ID #REQUIRED>
+				<!ELEMENT nom (#PCDATA)>
+				<!ELEMENT prenom (#PCDATA)>
+				<!ELEMENT dateNaissance (#PCDATA)>	
+		<!ELEMENT producteurs (producteur*)>
+			<!ELEMENT producteur (nom, prenom)>
+				<!ATTLIST producteur codeSerie IDREF #REQUIRED
+									idProducteur ID #REQUIRED>
+	<!ELEMENT contrats (contrat*)>
+		<!ELEMENT contrat (role, cachet, dateSignature)>
+			<!ATTLIST contrat codeSerie IDREF #REQUIRED
+										idActeur IDREF #REQUIRED
+										idProducteur IDREF #REQUIRED
+										numero ID #REQUIRED>
+			<!ELEMENT role EMPTY>
+			<!ATTLIST role idPerso IDREF #REQUIRED>
+			<!ELEMENT dateSignature (#PCDATA)>
+			<!ELEMENT cachet (#PCDATA)>

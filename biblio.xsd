@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- édité avec XMLSpy v2021 (x64) (http://www.altova.com) par Robert Smith (Robert Corporation) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" elementFormDefault="qualified" attributeFormDefault="unqualified" vc:minVersion="1.1">
+	<xs:element name="bibliotheque">
+		<xs:annotation>
+			<xs:documentation>Comment describing your root element</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="livres">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="livre" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="titre" type="xs:string"/>
+										<xs:element name="dateParution" type="xs:date"/>
+										<xs:element name="ISBN" type="xs:string"/>
+									</xs:sequence>
+									<xs:attribute name="idLivre" type="xs:ID" use="required"/>
+									<xs:attribute name="idAuteur" type="xs:IDREF" use="required"/>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="auteurs">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="auteur" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="nom" type="xs:string"/>
+										<xs:element name="prenom" type="xs:string"/>
+									</xs:sequence>
+									<xs:attribute name="idAuteur" type="xs:ID" use="required"/>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="abonnes">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="abonne" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="nom" type="xs:string"/>
+										<xs:element name="prenom" type="xs:string"/>
+										<xs:element name="emprunts">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="emprunt" minOccurs="0" maxOccurs="unbounded">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="dateEmprunt" type="xs:date"/>
+																<xs:element name="dateRetour" type="xs:date"/>
+																<xs:element name="livreEmprunte">
+																	<xs:complexType>
+																		<xs:attribute name="idLivre" type="xs:IDREF" use="required"/>
+																	</xs:complexType>
+																</xs:element>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bibliotheque xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///C:/Users/formation/Desktop/XML/biblio.xsd">
+	<!-- Un Commentaire en XML -->
+	<livres>
+		<livre idLivre="l1" idAuteur="a1">
+			<titre>Fondation</titre>
+			<dateParution>1951-02-02</dateParution>
+			<ISBN>123-456-789</ISBN>
+		</livre>
+		<livre idLivre="l2" idAuteur="a2">
+			<titre>La pierre et le sabre</titre>
+			<dateParution>1939-04-06</dateParution>
+			<ISBN>789-456-123</ISBN>
+		</livre>
+	</livres>
+	<auteurs>
+		<auteur idAuteur="a1">
+			<nom>Asimov</nom>
+			<prenom>Isaac</prenom>
+		</auteur>
+		<auteur idAuteur="a2">
+			<nom>Yoshikawa</nom>
+			<prenom>Eiji</prenom>
+		</auteur>
+	</auteurs>
+	<abonnes>
+		<abonne>
+			<nom>Smith</nom>
+			<prenom>Robert</prenom>
+			<emprunts>
+				<emprunt>
+					<dateEmprunt>2020-12-02</dateEmprunt>
+					<dateRetour>2021-01-03</dateRetour>
+					<livreEmprunte idLivre="l1"/>
+				</emprunt>
+			</emprunts>
+		</abonne>
+	</abonnes>
+</bibliotheque>

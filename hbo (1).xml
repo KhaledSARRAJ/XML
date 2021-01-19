@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HBO xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///C:/Users/formation/Desktop/XML/hbo.xsd">
+	<series>
+		<serie codeSerie="GOT">
+			<titre>Game of Thrones</titre>
+			<synopsis>Il y a très longtemps......</synopsis>
+			<dateDiffusion>2011-04-17</dateDiffusion>
+			<nbSaison>7</nbSaison>
+			<personnages>
+				<personnage idPerso="p1">
+					<identite>Oberyn Martell</identite>
+					<descriptif>Prince de Dorne</descriptif>
+				</personnage>
+				<personnage idPerso="p2">
+					<identite>Jon Snow</identite>
+					<descriptif>Lord Commandant de la garde de nuit</descriptif>
+				</personnage>
+			</personnages>
+		</serie>
+		<serie codeSerie="LS">
+			<titre>Les Soprano</titre>
+			<synopsis>Tony Soprano, un gangster.....</synopsis>
+			<dateDiffusion>1999-10-01</dateDiffusion>
+			<nbSaison>6</nbSaison>
+			<personnages>
+				<personnage idPerso="p3">
+					<identite>Tony Soprano</identite>
+					<descriptif>Chef de famille Soprano</descriptif>
+				</personnage>
+				<personnage idPerso="p4">
+					<identite>Carmela Soprano</identite>
+					<descriptif>Cheffe de la famille Soprano</descriptif>
+				</personnage>
+			</personnages>
+		</serie>
+	</series>
+	<employes>
+		<acteurs>
+			<acteur idActeur="a1">
+				<nom>Pascal</nom>
+				<prenom>Pedro</prenom>
+				<dateNaissance>1975-02-02</dateNaissance>
+			</acteur>
+			<acteur idActeur="a2">
+				<nom>Harington</nom>
+				<prenom>Kit</prenom>
+				<dateNaissance>1986-02-02</dateNaissance>
+			</acteur>
+			<acteur idActeur="a3">
+				<nom>Gandolfini</nom>
+				<prenom>James</prenom>
+				<dateNaissance>1961-02-01</dateNaissance>
+			</acteur>
+			<acteur idActeur="a4">
+				<nom>Falco</nom>
+				<prenom>Eddie</prenom>
+				<dateNaissance>1963-12-01</dateNaissance>
+			</acteur>
+		</acteurs>
+		<producteurs>
+			<producteur codeSerie="GOT" idProducteur="pr1">
+				<nom>Huffam</nom>
+				<prenom>Mark</prenom>
+			</producteur>
+			<producteur codeSerie="LS" idProducteur="pr2">
+				<nom>Grey</nom>
+				<prenom>Mark</prenom>
+			</producteur>
+		</producteurs>
+	</employes>
+	<contrats>
+		<contrat numero="n1" idActeur="a1" codeSerie="GOT" idProducteur="pr1">
+			<role idPerso="p1"/>
+			<cachet>500</cachet>
+			<dateSignature>2012-02-02</dateSignature>
+		</contrat>
+		<contrat numero="n2" idActeur="a2" codeSerie="GOT" idProducteur="pr1">
+			<role idPerso="p2"/>
+			<cachet>600</cachet>
+			<dateSignature>2012-02-02</dateSignature>
+		</contrat>
+		<contrat numero="n3" idActeur="a3" codeSerie="LS" idProducteur="pr2">
+			<role idPerso="p3"/>
+			<cachet>500</cachet>
+			<dateSignature>2012-02-02</dateSignature>
+		</contrat>
+		<contrat numero="n4" idActeur="a4" codeSerie="LS" idProducteur="pr2">
+			<role idPerso="p4"/>
+			<cachet>700</cachet>
+			<dateSignature>2012-02-02</dateSignature>
+		</contrat>
+	</contrats>
+</HBO>

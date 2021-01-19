@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HBO>
+	<series>
+		<serie codeSerie="GOT">
+			<titre>Game of Thrones</titre>
+			<synopsis>Il y a très longtemps......</synopsis>
+			<dateDiffusion>17/04/2011</dateDiffusion>
+			<nbSaison>7</nbSaison>
+			<personnages>
+				<personnage idPerso="p1">
+					<identite>Oberyn Martell</identite>
+					<descriptif>Prince de Dorne</descriptif>
+				</personnage>
+				<personnage idPerso="p2">
+					<identite>Jon Snow</identite>
+					<descriptif>Lord Commandant de la garde de nuit</descriptif>
+				</personnage>
+			</personnages>
+		</serie>
+		<serie codeSerie="LS">
+			<titre>Les Soprano</titre>
+			<synopsis>Tony Soprano, un gangster.....</synopsis>
+			<dateDiffusion>10/01/1999</dateDiffusion>
+			<nbSaison>6</nbSaison>
+			<personnages>
+				<personnage idPerso="p3">
+					<identite>Tony Soprano</identite>
+					<descriptif>Chef de famille Soprano</descriptif>
+				</personnage>
+				<personnage idPerso="p2">
+					<identite>Carmela Soprano</identite>
+					<descriptif>Cheffe de la famille Soprano</descriptif>
+				</personnage>
+			</personnages>
+		</serie>
+	</series>
+	<employes>
+		<acteurs>
+			<acteur idActeur="a1">
+				<nom>Pascal</nom>
+				<prenom>Pedro</prenom>
+				<dateNaissance>02/04/1975</dateNaissance>
+			</acteur>
+			<acteur idActeur="a2">
+				<nom>Harington</nom>
+				<prenom>Kit</prenom>
+				<dateNaissance>26/12/1986</dateNaissance>
+			</acteur>
+			<acteur idActeur="a3">
+				<nom>Gandolfini</nom>
+				<prenom>James</prenom>
+				<dateNaissance>18/09/1961</dateNaissance>
+			</acteur>
+			<acteur idActeur="a4">
+				<nom>Falco</nom>
+				<prenom>Eddie</prenom>
+				<dateNaissance>05/07/1963</dateNaissance>
+			</acteur>
+		</acteurs>
+		<producteurs>
+			<producteur codeSerie="GOT" idProducteur="pr1">
+				<nom>Huffam</nom>
+				<prenom>Mark</prenom>
+			</producteur>
+			<producteur codeSerie="LS" idProducteur="pr2">
+				<nom>Grey</nom>
+				<prenom>Mark</prenom>
+			</producteur>
+		</producteurs>
+	</employes>
+	<contrats>
+		<contrat numero="1" idActeur="a1" codeSerie="GOT" idProducteur="pr1">
+			<role idPerso="p1"/>
+			<cachet>500k</cachet>
+			<dateSignature>12/06/2012</dateSignature>
+		</contrat>
+		<contrat numero="2" idActeur="a2" codeSerie="GOT" idProducteur="pr1">
+			<role idPerso="p2"/>
+			<cachet>600k</cachet>
+			<dateSignature>12/06/2012</dateSignature>
+		</contrat>
+		<contrat numero="3" idActeur="a3" codeSerie="LS" idProducteur="pr2">
+			<role idPerso="p3"/>
+			<cachet>500k</cachet>
+			<dateSignature>12/06/2012</dateSignature>
+		</contrat>
+		<contrat numero="4" idActeur="a4" codeSerie="LS" idProducteur="pr2">
+			<role idPerso="p4"/>
+			<cachet>700k</cachet>
+			<dateSignature>12/06/2012</dateSignature>
+		</contrat>
+	</contrats>
+</HBO>

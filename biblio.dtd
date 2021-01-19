@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT bibliotheque (livres, auteurs, abonnes)>
+<!ELEMENT livres (livre+)>
+<!ELEMENT livre (titre, dateParution, ISBN)>
+<!ATTLIST livre idAuteur IDREF #REQUIRED
+                idLivre ID #REQUIRED>
+<!ELEMENT titre (#PCDATA)>
+<!ELEMENT dateParution (#PCDATA)>
+<!ELEMENT ISBN (#PCDATA)>
+<!ELEMENT auteurs (auteur+)>
+<!ELEMENT auteur (nom, prenom)>
+<!ATTLIST auteur idAuteur ID #REQUIRED>
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT prenom (#PCDATA)>
+<!ELEMENT abonnes (abonne+)>
+<!ELEMENT abonne (nom, prenom, emprunts)>
+<!ELEMENT emprunts (emprunt*)>
+<!ELEMENT emprunt (dateEmprunt, dateRetour, livreEmprunte)>
+<!ELEMENT dateEmprunt (#PCDATA)>
+<!ELEMENT dateRetour (#PCDATA)>
+<!ELEMENT livreEmprunte EMPTY>
+<!ATTLIST livreEmprunte idLivre IDREF #REQUIRED>
+
+
+
+
